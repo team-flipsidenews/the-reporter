@@ -15,7 +15,7 @@
         <span class="gh-membership-toggle-value gh-membership-toggle-value--yearly">{{t "Yearly"}}</span>
     </button>
     <div class="gh-tiers-container">
-        {{#get "tiers" include="monthly_price,yearly_price,benefits" limit="all" as |tiers|}}
+        {{#get "tiers" include="monthly_price,yearly_price,benefits" filter="visibility:public" limit="100" as |tiers|}}
             {{#foreach tiers}}
                 <div class="gh-tier-card">
                     {{#if trial_days}}

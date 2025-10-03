@@ -26,7 +26,7 @@
         {{/if}}
     </div>
     <div class="gh-authors-feed">
-        {{#get "authors" include="count.posts" limit="all"}}
+        {{#get "authors" include="count.posts" limit="100"}}
         {{#foreach authors}}
         <div class="gh-author-card">
             <a href={{url}} class="gh-author-card-image-wrapper-link" aria-label="{{t "profile image"}}">

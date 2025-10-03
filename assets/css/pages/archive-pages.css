@@ -133,7 +133,10 @@
 .gh-author-page-socials {
     display: flex;
     align-items: center;
-    width: max-content;
+    justify-content: center;
+    width: 100%;
+    max-width: max-content;
+    flex-wrap: wrap;
 }
 
 .gh-author-page-social-link {
@@ -195,6 +198,7 @@
 .gh-author-page-meta {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 25px;
     margin-top: 16px;
 }

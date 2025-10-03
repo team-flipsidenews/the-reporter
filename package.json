@@ -2,7 +2,7 @@
     "name": "the-reporter",
     "description": "The Reporter delivers news with clarity, showcased in a sleek magazine format.",
     "demo": "https://reporter-news.highfivethemes.com/",
-    "version": "1.1.9",
+    "version": "1.2.2",
     "engines": {
         "ghost": ">=5.0.0"
     },
