@@ -26,7 +26,7 @@
         {{/if}}
     </div>
     <div class="gh-categories-feed">
-        {{#get "tags" include="count.posts" limit="all"}}
+        {{#get "tags" include="count.posts" limit="100"}}
         {{#if tags}}
         {{#foreach tags}}
         <div class="gh-category-card">

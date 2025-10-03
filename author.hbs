@@ -24,26 +24,70 @@
             {{#if bio}}
             <p class="gh-author-page-bio">{{bio}}</p>
             {{/if}}
-            <div class="gh-author-page-socials">
-                {{#if facebook}}
-                <a class="gh-author-page-social-link" href="{{facebook_url}}" target="_blank" rel="noopener"
-                    aria-label="{{name}}'s {{t "facebook link"}}">
-                    {{>icons/facebook}}
-                </a>
-                {{/if}}
-                {{#if twitter}}
-                <a class="gh-author-page-social-link" href="{{twitter_url}}" target="_blank" rel="noopener"
-                    aria-label="{{name}}'s {{t "twitter link"}}">
-                    {{>icons/twitter}}
-                </a>
-                {{/if}}
-                {{#if website}}
-                <a class="gh-author-page-social-link" href="{{website}}" target="_blank" rel="noopener"
-                    aria-label="{{name}}'s {{t "website link"}}">
-                    {{>icons/globe-icon}}
-                </a>
-                {{/if}}
-            </div>
+            {{#has any="facebook, twitter, website, linkedin, bluesky, threads, mastodon, tiktok, youtube, instagram"}}
+                <div class="gh-author-page-socials">
+                    {{#if website}}
+                    <a class="gh-author-page-social-link" href="{{social_url type="website"}}" target="_blank" rel="noopener"
+                        aria-label="{{name}}'s {{t "Website"}}">
+                        {{>icons/globe-icon}}
+                    </a>
+                    {{/if}}
+                    {{#if twitter}}
+                    <a class="gh-author-page-social-link" href="{{social_url type="twitter"}}" target="_blank" rel="noopener"
+                        aria-label="{{name}}'s {{t "Twitter"}}">
+                        {{>icons/twitter}}
+                    </a>
+                    {{/if}}
+                    {{#if facebook}}
+                    <a class="gh-author-page-social-link" href="{{social_url type="facebook"}}" target="_blank" rel="noopener"
+                        aria-label="{{name}}'s {{t "Facebook"}}">
+                        {{>icons/facebook}}
+                    </a>
+                    {{/if}}
+                    {{#if linkedin}}
+                    <a class="gh-author-page-social-link" href="{{social_url type="linkedin"}}" target="_blank" rel="noopener"
+                        aria-label="{{name}}'s {{t "linkedin link"}}">
+                        {{>icons/linkedin-icon}}
+                    </a>
+                    {{/if}}
+                    {{#if bluesky}}
+                    <a class="gh-author-page-social-link" href="{{social_url type="bluesky"}}" target="_blank" rel="noopener"
+                        aria-label="{{name}}'s {{t "bluesky link"}}">
+                        {{>icons/bluesky-icon}}
+                    </a>
+                    {{/if}}
+                    {{#if threads}}
+                    <a class="gh-author-page-social-link" href="{{social_url type="threads"}}" target="_blank" rel="noopener"
+                        aria-label="{{name}}'s {{t "threads link"}}">
+                        {{>icons/threads-icon}}
+                    </a>
+                    {{/if}}
+                    {{#if mastodon}}
+                    <a class="gh-author-page-social-link" href="{{social_url type="mastodon"}}" target="_blank" rel="noopener"
+                        aria-label="{{name}}'s {{t "mastodon link"}}">
+                        {{>icons/mastodon-icon}}
+                    </a>
+                    {{/if}}
+                    {{#if tiktok}}
+                    <a class="gh-author-page-social-link" href="{{social_url type="tiktok"}}" target="_blank" rel="noopener"
+                        aria-label="{{name}}'s {{t "tiktok link"}}">
+                        {{>icons/tiktok-icon}}
+                    </a>
+                    {{/if}}
+                    {{#if youtube}}
+                    <a class="gh-author-page-social-link" href="{{social_url type="youtube"}}" target="_blank" rel="noopener"
+                        aria-label="{{name}}'s {{t "youtube link"}}">
+                        {{>icons/youtube-icon}}
+                    </a>
+                    {{/if}}
+                    {{#if instagram}}
+                    <a class="gh-author-page-social-link" href="{{social_url type="instagram"}}" target="_blank" rel="noopener"
+                        aria-label="{{name}}'s {{t "instagram link"}}">
+                        {{>icons/instagram-icon}}
+                    </a>
+                    {{/if}}
+                </div>
+            {{/has}}
             <div class="gh-author-page-meta">
                 <p class="gh-author-page-posts-count">
                    {{plural ../pagination.total empty=(t "No Posts") singular=(t "% Post") plural=(t "% Posts")}}
