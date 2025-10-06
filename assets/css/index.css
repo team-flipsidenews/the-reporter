@@ -1178,6 +1178,10 @@ html,
     max-width: 100%;
 }
 
+/* Flipside theme overrides */
+/* ---------------------------------------------------------- */
+@import "fs-theme-overrides.css";
+
 @media (max-width: 1100px) {
     .gh-container {
         padding-left: 20px;

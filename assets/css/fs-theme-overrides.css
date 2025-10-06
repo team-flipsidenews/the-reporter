@@ -1,0 +1,46 @@
+.gh-container {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.gh-card-image-wrapper .gh-card-image-wrapper-link--noImage-logo {
+  height: auto;
+  max-width: 100%;
+}
+
+.gh-card-image-wrapper-link--noImage-logo {
+  height: auto;
+  max-width:100%;
+}
+
+ .gh-header-container img.gh-site-logo-img, 
+.gh-header-container img.gh-site-logo-img-dark-mode {
+  height: 64px;
+}
+
+.gh-footer .gh-site-logo-img, 
+.gh-footer .gh-site-logo-img-dark-mode {
+  height: 60px;
+}
+
+.gh-search svg,
+.gh-switch-btn svg {
+width: 28px;
+height: 28px;
+
+}
+.gh-sign-in-btn {
+  font-size: 16px;
+}
+
+.gh-header__options .gh-subscribe-button {
+  font-size: 16px;
+}
+
+.gh-form-site-logo {
+  height: auto;
+}
+
+.gh-form-site-logo-img {
+  height: 80px;
+}
