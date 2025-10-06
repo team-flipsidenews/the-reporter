@@ -1,0 +1,18 @@
+cat > .gitignore << 'EOF'
+# deps & caches
+node_modules/
+npm-debug.log*
+yarn.lock
+.pnpm-store/
+.cache/
+.eslintcache
+
+# OS cruft
+.DS_Store
+
+# build output (we'll still ship it in the zip)
+assets/built/
+
+# zips
+*.zip
+EOF
