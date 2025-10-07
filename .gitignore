@@ -6,6 +6,7 @@ yarn.lock
 .pnpm-store/
 .cache/
 .eslintcache
+package-lock.json
 
 # OS cruft
 .DS_Store

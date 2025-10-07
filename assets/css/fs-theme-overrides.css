@@ -1,6 +1,26 @@
+/* Navigation */
+.gh-header {
+  height: 80px;
+}
+
 .gh-container {
   padding-top: 8px;
   padding-bottom: 8px;
+}
+
+.gh-nav-list-item__button, .gh-sign-in-btn {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.gh-search svg,
+.gh-switch-btn svg {
+width: 28px;
+height: 28px;
+}
+
+.gh-header__options .gh-subscribe-button {
+  font-size: 16px;
 }
 
 .gh-card-image-wrapper .gh-card-image-wrapper-link--noImage-logo {
@@ -23,17 +43,8 @@
   height: 60px;
 }
 
-.gh-search svg,
-.gh-switch-btn svg {
-width: 28px;
-height: 28px;
 
-}
 .gh-sign-in-btn {
-  font-size: 16px;
-}
-
-.gh-header__options .gh-subscribe-button {
   font-size: 16px;
 }
 
