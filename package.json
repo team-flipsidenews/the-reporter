@@ -38,17 +38,22 @@
         "ghost-theme"
     ],
     "devDependencies": {
-        "@babel/core": "^7.21.0",
-        "@babel/preset-env": "^7.20.2",
-        "@rollup/plugin-babel": "^6.0.3",
-        "@rollup/plugin-commonjs": "^25.0.0",
-        "@rollup/plugin-node-resolve": "^15.0.1",
-        "@rollup/plugin-terser": "^0.4.0",
+        "@babel/core": "^7.28.4",
+        "@babel/preset-env": "^7.28.3",
+        "@rollup/plugin-babel": "^6.0.4",
+        "@rollup/plugin-commonjs": "^25.0.8",
+        "@rollup/plugin-json": "^6.1.0",
+        "@rollup/plugin-node-resolve": "^15.3.1",
+        "@rollup/plugin-replace": "^5.0.7",
+        "@rollup/plugin-terser": "^0.4.4",
+        "autoprefixer": "^10.4.21",
         "bestzip": "^2.2.1",
-        "postcss": "^8.4.24",
+        "cssnano": "^6.1.2",
+        "gscan": "^5.1.0",
+        "postcss": "^8.5.6",
         "postcss-import": "^15.1.0",
-        "postcss-preset-env": "^8.0.1",
-        "rollup": "^3.18.0",
+        "postcss-preset-env": "^8.5.1",
+        "rollup": "^3.29.5",
         "rollup-plugin-livereload": "^2.0.5",
         "rollup-plugin-postcss": "^4.0.2"
     },
@@ -236,6 +241,15 @@
                 "type": "text",
                 "description": "Enter the text that will be displayed in the call-to-action sections under main text.",
                 "default": "Lorem ultrices malesuada sapien amet pulvinar quis. Feugiat etiam ullamcorper pharetra vitae nibh enim vel."
+            },
+            "donate_cta_text": {
+                "type": "text",
+                "label": "Donate Button Text",
+                "default": "Donate"
+            },
+            "donate_url": {
+                "type": "text",
+                "description": "Enter the the url to the donation page"
             }
         }
     },

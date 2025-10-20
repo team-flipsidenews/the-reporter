@@ -66,6 +66,7 @@
 <body class="{{body_class}} theme-the-reporter">
     <div class="gh-viewport">
         <main class="gh-sign-in-page gh-form-page">
+            {{!-- FS theme override - disabling site cover image as bg image on page 
             {{#if @site.cover_image}}
              <picture>
                 <source srcset="{{img_url @site.cover_image size="3000" format="webp" }} 3000w, {{img_url @site.cover_image
@@ -80,6 +81,7 @@
                     src="{{img_url @site.cover_image size="3000"}}" alt="{{t "Site cover image"}}" loading="lazy">
             </picture>
             {{/if}}
+            --}}
             <div class="gh-form-wrapper">
                 <form class="gh-form-page-form" data-members-form="signup" data-members-autoredirect="false" novalidate>
                     <a class="gh-form-site-logo{{#if @custom.dark_mode_logo}} has-DM-logo{{/if}}"

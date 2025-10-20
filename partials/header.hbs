@@ -23,14 +23,20 @@
                     {{>"icons/moon"}}
                     {{>"icons/sun"}}
                 </button>
+                
                 {{#if @site.members_enabled}}
+                    <a class="gh-nav-menu-item gh-sign-in-btn" href="{{@site.url}}/signin" aria-label="{{t "Sign in"}}">{{t "Sign in"}}</a>
+                    {{!-- 
                     {{#if @member}}
                         <a class="gh-subscribe-button gh-subscribe-button--type-2 gh-accent-button" href="{{@site.url}}/account" aria-label="{{t "My Account"}}"><span>{{t "My Account"}}</span></a>
                     {{else}}
                         <a class="gh-nav-menu-item gh-sign-in-btn" href="{{@site.url}}/signin" aria-label="{{t "Sign in"}}">{{t "Sign in"}}</a>
                         <a class="gh-subscribe-button gh-subscribe-button--type-2 gh-accent-button" href="{{@site.url}}/subscribe" aria-label="{{t "Subscribe"}}"><span>{{t "Subscribe"}}</span></a>
                     {{/if}}
-                {{/if}}
+                    --}}
+                {{/if}} 
+
+                <a class="gh-donate-button gh-accent-button" href="{{@custom.donate_url}}" aria-label="{{t "Donate"}}"><span>{{@custom.donate_cta_text}}</span></a>
             </div>
         </div>
 
@@ -66,14 +72,21 @@
                     {{>"icons/moon"}}
                     {{>"icons/sun"}}
                 </button>
+                
                 {{#if @site.members_enabled}}
+                    <a class="gh-nav-menu-item gh-sign-in-btn" href="{{@site.url}}/signin" aria-label="{{t "Sign in"}}">{{t "Sign in"}}</a>
+                {{!-- 
                     {{#if @member}}
                         <a class="gh-subscribe-button gh-accent-button" href="{{@site.url}}/account" aria-label="{{t "My Account"}}"><span>{{t "My Account"}}</span></a>
                     {{else}}
                         <a class="gh-nav-menu-item gh-sign-in-btn" href="{{@site.url}}/signin" aria-label="{{t "Sign in"}}">{{t "Sign in"}}</a>
                         <a class="gh-subscribe-button gh-accent-button" href="{{@site.url}}/subscribe" aria-label="{{t "Subscribe"}}"><span>{{t "Subscribe"}}</span></a>
                     {{/if}}
+                 --}}
                 {{/if}}
+                
+                <a class="gh-donate-button gh-accent-button" href="{{@custom.donate_url}}" aria-label="{{t "Donate"}}"><span>{{@custom.donate_cta_text}}</span></a>
+               
             </div>
 
         </div>
