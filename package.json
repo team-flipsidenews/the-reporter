@@ -241,6 +241,15 @@
                 "type": "text",
                 "description": "Enter the text that will be displayed in the call-to-action sections under main text.",
                 "default": "Lorem ultrices malesuada sapien amet pulvinar quis. Feugiat etiam ullamcorper pharetra vitae nibh enim vel."
+            },
+            "donate_cta_text": {
+                "type": "text",
+                "label": "Donate Button Text",
+                "default": "Donate"
+            },
+            "donate_url": {
+                "type": "text",
+                "description": "Enter the the url to the donation page"
             }
         }
     },
